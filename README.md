@@ -1,4 +1,4 @@
-# HelloFresh-Style Recipe Cards
+# Recipe Printer
 
 A lightweight static app to load recipe JSON and render printable cards.
 
@@ -6,6 +6,18 @@ A lightweight static app to load recipe JSON and render printable cards.
 - Open `index.html` directly, or run `python -m http.server` and visit `http://localhost:8000`.
 - Click "Load Sample" to load `recipes/sample.json` (when opened via `file://`, use a local server so the fetch can read the file), upload your own JSON, or use "Paste JSON" to paste raw JSON text.
 - Print via the on-page button or your browser.
+
+## Deploy to GitHub Pages
+This repo includes a GitHub Actions workflow that deploys the static site to GitHub Pages on every push to `main`.
+
+Steps:
+- Rename the repository to `recipe-printer` (or your preferred name) on GitHub.
+- In your GitHub repo, go to Settings → Pages and set "Source" to "GitHub Actions".
+- Push to `main` (or use the "Run workflow" button). The workflow at `.github/workflows/gh-pages.yml` uploads the repository as an artifact and publishes it to Pages.
+
+Notes:
+- The app uses relative paths, so it works whether hosted at a custom domain or under `/REPO-NAME/`.
+- If using project pages (default), the site URL will be `https://<user>.github.io/<repo>/`.
 
 ## Use with the Custom GPT
 You can generate compatible recipe JSON using this GPT: https://chatgpt.com/g/g-68e29cdf78e48191840c2823eaa319bf-recipe-generator
@@ -25,7 +37,7 @@ You can generate compatible recipe JSON using this GPT: https://chatgpt.com/g/g-
 Use this as a system prompt in an LLM to generate valid payloads for this app. Paste the model’s JSON output into a `.json` file and load it.
 
 ```
-You are generating JSON for a HelloFresh-style recipe card app.
+You are generating JSON for a recipe card app.
 Output ONLY valid JSON, no prose. Use ASCII quotes.
 
 Top-level may be:
