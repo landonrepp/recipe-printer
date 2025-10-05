@@ -245,5 +245,13 @@ els.pasteLoad?.addEventListener('click', (e) => {
   loadFromPastedText();
 });
 
+// Ctrl+Enter (and Cmd+Enter) submits the paste dialog
+els.pasteText?.addEventListener('keydown', (e) => {
+  if (e.key === 'Enter' && (e.ctrlKey || e.metaKey)) {
+    e.preventDefault();
+    loadFromPastedText();
+  }
+});
+
 // Render sample.json on first load (fallback to inline sample when unavailable)
 loadSampleFromDisk();
