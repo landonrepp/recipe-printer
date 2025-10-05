@@ -1,0 +1,69 @@
+:root{
+  --bg:#fafafa; --fg:#111; --muted:#4b5563; --accent:#2b7a78;
+  --pill:#eef2f7; --border:#e5e7eb; --card:#ffffff;
+  --heroA:#fde68a; --heroB:#fecaca; /* fallback gradient */
+}
+*{-webkit-print-color-adjust:exact; print-color-adjust:exact}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.45}
+.no-print{display:flex}
+
+/* Toolbar */
+.toolbar{position:sticky;top:0;z-index:5;background:#fff;border-bottom:1px solid var(--border);padding:10px 12px;display:flex;align-items:center;justify-content:space-between;gap:8px}
+.toolbar .file-label{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--border);padding:6px 10px;border-radius:6px;background:#fff;cursor:pointer}
+.toolbar input[type=file]{display:none}
+.toolbar button{border:1px solid var(--border);background:#fff;border-radius:6px;padding:6px 12px;cursor:pointer}
+.toolbar button:hover{border-color:#cbd5e1}
+
+main{display:flex;justify-content:center;padding:16px}
+.cards{display:flex;flex-direction:column;gap:16px;width:100%;max-width:1000px}
+.card{width:100%;background:var(--card);border:1px solid var(--border);border-radius:10px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.04)}
+
+.hero{display:flex;align-items:flex-end;min-height:180px;background:linear-gradient(135deg,var(--heroA),var(--heroB));padding:20px}
+.hero-info{background:rgba(255,255,255,.88);backdrop-filter:saturate(1.2) blur(2px);padding:14px 16px;border-radius:10px;border:1px solid var(--border)}
+.hero h1{margin:0 0 6px 0;font-size:1.8rem}
+.meta{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:6px}
+.pill{font-size:.85rem;background:var(--pill);padding:4px 10px;border-radius:999px;border:1px solid var(--border);box-shadow:0 0 0 2px rgba(255,255,255,.8) inset}
+.badges{display:flex;gap:6px;flex-wrap:wrap}
+.badges .badge{background:#eefdf4;color:#065f46;border:1px solid #bbf7d0;border-radius:999px;padding:2px 8px;font-size:.8rem}
+
+.content{display:flex;gap:24px;padding:22px}
+.col{flex:1}
+.ingredients{max-width:340px}
+.ingredients h2,.steps h2{margin:0 0 8px 0}
+.ingredients ul{margin:0;padding-left:0;list-style:none}
+.ingredients li{margin:8px 0;position:relative;padding-left:1.4em}
+.ingredients li::before{content:"";position:absolute;left:0;top:.35em;width:0.9em;height:0.9em;border:1.6px solid #cbd5e1;border-radius:4px;background:white}
+
+.nutrition{margin-top:16px;border-top:1px dashed var(--border);padding-top:12px}
+.nutrition h3{margin:0 0 8px 0;font-size:1rem}
+.nutrition ul{margin:0;padding-left:18px}
+
+.steps-list{margin:0;padding-left:0;list-style:none;counter-reset:step}
+.steps-list li{margin:12px 0;position:relative;padding-left:2.2em;counter-increment:step}
+.steps-list li::before{content:counter(step);position:absolute;left:0;top:0;width:1.6em;height:1.6em;border-radius:999px;border:1px solid var(--border);background:var(--pill);display:inline-flex;align-items:center;justify-content:center;font-weight:700;color:var(--muted)}
+.notes{margin-top:14px;padding:10px;border:1px dashed var(--border);border-radius:8px;background:#fffdf5}
+.hidden{display:none}
+
+/* Paste JSON dialog */
+dialog{border:none;border-radius:10px;padding:0;box-shadow:0 10px 30px rgba(0,0,0,.25);max-width:800px;width:min(90vw,800px)}
+dialog::backdrop{background:rgba(0,0,0,.35)}
+.paste-form{display:flex;flex-direction:column;gap:10px;padding:14px}
+.paste-form h3{margin:0 0 6px 2px}
+#pasteText{width:100%;min-height:300px;resize:vertical;padding:10px;border:1px solid var(--border);border-radius:8px;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;font-size:12px;background:#fbfbfb}
+.paste-form .actions{display:flex;justify-content:flex-end;gap:8px}
+.paste-form button{border:1px solid var(--border);background:#fff;border-radius:6px;padding:6px 12px;cursor:pointer}
+.paste-form button:hover{border-color:#cbd5e1}
+
+/* Print tweaks */
+@media print{
+  @page{size:Letter;margin:0.5in}
+  .no-print{display:none !important}
+  body{background:white;font-size:11pt}
+  .cards{gap:0.4in;max-width:100%}
+  .card{border:1px solid #d1d5db;box-shadow:none;page-break-inside:avoid;border-radius:12px}
+  .hero{min-height:auto;padding:18px}
+  .hero-info{border-radius:12px}
+  .content{gap:24px}
+  .ingredients{max-width:40%}
+}

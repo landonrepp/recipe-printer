@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Recipe Card</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="toolbar no-print">
+      <div class="toolbar-left">
+        <label class="file-label">
+          <input id="fileInput" type="file" accept="application/json" />
+          <span>Load Recipe JSON</span>
+        </label>
+        <button id="loadSample">Load Sample</button>
+        <button id="pasteBtn">Paste JSON</button>
+      </div>
+      <div class="toolbar-right">
+        <button id="printBtn">Print</button>
+      </div>
+    </header>
+
+    <main>
+      <div id="cards" class="cards"></div>
+
+      <template id="cardTemplate">
+        <section class="card">
+          <div class="hero">
+            <div class="hero-info">
+              <h1 class="title">Recipe Title</h1>
+              <div class="meta">
+                <span class="pill time">—</span>
+                <span class="pill servings">—</span>
+              </div>
+              <div class="badges"></div>
+            </div>
+          </div>
+
+          <div class="content">
+            <aside class="col ingredients">
+              <h2>Ingredients</h2>
+              <ul class="ingredientsList"></ul>
+
+              <div class="nutrition hidden">
+                <h3>Nutrition (per serving)</h3>
+                <ul class="nutritionList"></ul>
+              </div>
+            </aside>
+
+            <article class="col steps">
+              <h2>Steps</h2>
+              <ol class="stepsList"></ol>
+              <div class="notes hidden"></div>
+            </article>
+          </div>
+        </section>
+      </template>
+    </main>
+
+    <!-- Paste JSON Dialog -->
+    <dialog id="pasteDialog">
+      <form method="dialog" class="paste-form">
+        <h3>Paste JSON</h3>
+        <textarea id="pasteText" rows="14" placeholder="Paste JSON here..." spellcheck="false"></textarea>
+        <div class="actions">
+          <button id="pasteCancel" type="reset" value="cancel">Cancel</button>
+          <button id="pasteLoad" type="submit" value="default">Load</button>
+        </div>
+      </form>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+  </html>

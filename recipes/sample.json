@@ -1,0 +1,779 @@
+{
+  "recipes": [
+    {
+      "id": "lemon-herb-quinoa-roasted-veg-bowls",
+      "title": "Lemon-Herb Quinoa & Roasted Veg Bowls",
+      "time": "25–30 min",
+      "servings": "Serves 6",
+      "badges": ["Vegetarian", "Gluten-Free", "Meal Prep", "30 Minutes"],
+      "ingredients": [
+        { "item": "Quinoa", "quantity": "2 cups dry, rinsed" },
+        { "item": "Broccoli florets", "quantity": "6 cups" },
+        { "item": "Cherry tomatoes", "quantity": "3 cups" },
+        { "item": "Red onion", "quantity": "1 large, sliced" },
+        { "item": "Olive oil", "quantity": "5 tbsp" },
+        { "item": "Lemon", "quantity": "2, zested & juiced" },
+        { "item": "Garlic", "quantity": "3 cloves, minced" },
+        { "item": "Fresh parsley", "quantity": "1 cup, chopped" },
+        { "item": "Salt & black pepper", "quantity": "To taste" }
+      ],
+      "steps": [
+        "Heat oven to 425°F (220°C).",
+        "Cook quinoa in 4 cups salted water until fluffy, 15 minutes; rest covered.",
+        "Toss broccoli, tomatoes, onion with 3 tbsp oil, salt, pepper; roast 18–20 minutes.",
+        "Whisk remaining oil, lemon juice/zest, garlic, pinch salt.",
+        "Toss quinoa with parsley and half the dressing.",
+        "Divide quinoa and veg; drizzle remaining dressing."
+      ],
+      "chickenPair": "Top bowls with sliced baked chicken seasoned only with salt and pepper.",
+      "notes": "Keeps 4–5 days. Add lemon wedge when packing.",
+      "theme": "forest"
+    },
+    {
+      "id": "smoky-sweet-potato-chickpea-sheet-pan",
+      "title": "Smoky Sweet Potato & Chickpea Sheet-Pan Bowls",
+      "time": "30 min",
+      "servings": "Serves 6",
+      "badges": ["Vegetarian", "Gluten-Free", "Meal Prep", "30 Minutes"],
+      "ingredients": [
+        { "item": "Sweet potatoes", "quantity": "3 large, 3/4-inch cubes" },
+        { "item": "Canned chickpeas", "quantity": "3 cans (15 oz), drained & rinsed" },
+        { "item": "Red bell peppers", "quantity": "3, sliced" },
+        { "item": "Red onion", "quantity": "1 large, wedges" },
+        { "item": "Olive oil", "quantity": "4 tbsp" },
+        { "item": "Smoked paprika", "quantity": "2 tsp" },
+        { "item": "Cumin", "quantity": "2 tsp" },
+        { "item": "Salt & pepper", "quantity": "To taste" },
+        { "item": "Baby spinach", "quantity": "6 cups" },
+        { "item": "Lime", "quantity": "1, cut in wedges" }
+      ],
+      "steps": [
+        "Heat oven to 450°F (230°C).",
+        "Toss potatoes, chickpeas, peppers, onion with oil, paprika, cumin, salt, pepper.",
+        "Roast on two sheets, 20–22 minutes, flipping once.",
+        "Place spinach into containers; top with hot roast to wilt slightly.",
+        "Squeeze lime over portions.",
+        "Serve or chill."
+      ],
+      "chickenPair": "Add sliced salt-and-pepper baked chicken to each bowl.",
+      "notes": "Great with a dollop of plain yogurt or tahini.",
+      "theme": "sunset"
+    },
+    {
+      "id": "cilantro-lime-black-bean-rice-bowls",
+      "title": "Cilantro-Lime Black Bean Rice Bowls",
+      "time": "25 min",
+      "servings": "Serves 6",
+      "badges": ["Vegetarian", "Gluten-Free", "Meal Prep", "30 Minutes"],
+      "ingredients": [
+        { "item": "Long-grain white rice", "quantity": "2 1/2 cups dry" },
+        { "item": "Canned black beans", "quantity": "3 cans (15 oz), rinsed" },
+        { "item": "Corn kernels", "quantity": "3 cups (fresh or frozen)" },
+        { "item": "Cherry tomatoes", "quantity": "3 cups, halved" },
+        { "item": "Cilantro", "quantity": "1 cup, chopped" },
+        { "item": "Lime", "quantity": "2, zested & juiced" },
+        { "item": "Olive oil", "quantity": "3 tbsp" },
+        { "item": "Garlic powder", "quantity": "1 tsp" },
+        { "item": "Salt & pepper", "quantity": "To taste" },
+        { "item": "Avocado", "quantity": "2, sliced (optional at serve)" }
+      ],
+      "steps": [
+        "Cook rice in 5 cups salted water, 12–15 minutes; fluff.",
+        "Toss warm rice with oil, lime juice/zest, cilantro, salt.",
+        "Warm beans and corn in a skillet with 2 tbsp water, garlic powder, pinch salt.",
+        "Divide rice into containers.",
+        "Top with beans/corn and tomatoes.",
+        "Add avocado when serving."
+      ],
+      "chickenPair": "Add sliced baked chicken on top before serving.",
+      "notes": "Pack lime wedges to refresh flavor midweek.",
+      "theme": "ocean"
+    },
+    {
+      "id": "quinoa-lentil-tabbouleh",
+      "title": "Quinoa Tabbouleh with Lentils & Cucumber",
+      "time": "25–30 min",
+      "servings": "Serves 6",
+      "badges": ["Vegetarian", "Gluten-Free", "Meal Prep", "30 Minutes"],
+      "ingredients": [
+        { "item": "Quinoa", "quantity": "1 1/2 cups dry, rinsed" },
+        { "item": "Cooked green lentils", "quantity": "3 cups (or 2 cans, drained)" },
+        { "item": "Cucumber", "quantity": "2 large, diced" },
+        { "item": "Tomatoes", "quantity": "4 medium, diced" },
+        { "item": "Parsley", "quantity": "2 cups, finely chopped" },
+        { "item": "Mint", "quantity": "1/2 cup, chopped" },
+        { "item": "Lemon juice", "quantity": "1/3 cup" },
+        { "item": "Olive oil", "quantity": "1/3 cup" },
+        { "item": "Green onion", "quantity": "1 bunch, sliced" },
+        { "item": "Salt & pepper", "quantity": "To taste" }
+      ],
+      "steps": [
+        "Cook quinoa in 3 cups salted water, 15 minutes; cool 5 minutes.",
+        "Whisk lemon juice, oil, salt, pepper.",
+        "Combine quinoa, lentils, cucumber, tomatoes, parsley, mint, green onion.",
+        "Pour dressing over, toss to coat.",
+        "Adjust salt and lemon.",
+        "Pack into containers."
+      ],
+      "chickenPair": "Serve with sliced salt-and-pepper baked chicken for extra protein.",
+      "notes": "Best enjoyed cold; brightens with extra lemon.",
+      "theme": "forest"
+    },
+    {
+      "id": "coconut-curry-cauliflower-spinach",
+      "title": "Coconut Curry Cauliflower & Spinach",
+      "time": "25–30 min",
+      "servings": "Serves 6",
+      "badges": ["Vegetarian", "Gluten-Free", "Meal Prep", "30 Minutes"],
+      "ingredients": [
+        { "item": "Cauliflower florets", "quantity": "8 cups" },
+        { "item": "Baby spinach", "quantity": "6 cups" },
+        { "item": "Coconut milk (full-fat)", "quantity": "2 cans (13.5 oz)" },
+        { "item": "Crushed tomatoes", "quantity": "1 cup" },
+        { "item": "Onion", "quantity": "1 large, diced" },
+        { "item": "Garlic", "quantity": "4 cloves, minced" },
+        { "item": "Fresh ginger", "quantity": "1 tbsp, grated" },
+        { "item": "Curry powder", "quantity": "2 tbsp" },
+        { "item": "Salt", "quantity": "1 1/4 tsp, plus to taste" },
+        { "item": "Cooked rice or quinoa", "quantity": "6 cups, for serving" }
+      ],
+      "steps": [
+        "Sauté onion in a large pot with 1 tbsp oil, 3 minutes.",
+        "Add garlic, ginger, curry; cook 30 seconds.",
+        "Stir in coconut milk, tomatoes, salt; bring to a simmer.",
+        "Add cauliflower; simmer until just tender, 10–12 minutes.",
+        "Fold in spinach to wilt; season.",
+        "Portion over rice or quinoa."
+      ],
+      "chickenPair": "Add sliced baked chicken on top of each portion.",
+      "notes": "Freezes well; add fresh cilantro when serving.",
+      "theme": "sunset"
+    },
+    {
+      "id": "greek-chickpea-salad",
+      "title": "Greek Chickpea Salad with Feta & Herbs",
+      "time": "15–20 min (no-cook)",
+      "servings": "Serves 6",
+      "badges": ["Vegetarian", "Gluten-Free", "Meal Prep", "No-Cook"],
+      "ingredients": [
+        { "item": "Canned chickpeas", "quantity": "3 cans (15 oz), rinsed" },
+        { "item": "Cucumber", "quantity": "2 large, diced" },
+        { "item": "Cherry tomatoes", "quantity": "3 cups, halved" },
+        { "item": "Red onion", "quantity": "1/2 large, thinly sliced" },
+        { "item": "Kalamata olives", "quantity": "1 cup, halved" },
+        { "item": "Feta cheese", "quantity": "6 oz, crumbled" },
+        { "item": "Olive oil", "quantity": "1/4 cup" },
+        { "item": "Red wine vinegar", "quantity": "3 tbsp" },
+        { "item": "Dried oregano", "quantity": "2 tsp" },
+        { "item": "Salt & pepper", "quantity": "To taste" }
+      ],
+      "steps": [
+        "Whisk oil, vinegar, oregano, salt, pepper.",
+        "Combine chickpeas, cucumber, tomatoes, onion, olives in a bowl.",
+        "Toss with dressing.",
+        "Fold in feta.",
+        "Pack into containers.",
+        "Chill until serving."
+      ],
+      "chickenPair": "Add sliced salt-and-pepper baked chicken when serving.",
+      "notes": "Stays crisp 3–4 days; keep feta separate if preferred.",
+      "theme": "ocean"
+    },
+    {
+      "id": "zucchini-noodle-pesto",
+      "title": "Zucchini Noodle Pesto with Cherry Tomatoes",
+      "time": "20–25 min",
+      "servings": "Serves 6",
+      "badges": ["Vegetarian", "Gluten-Free", "Meal Prep", "30 Minutes"],
+      "ingredients": [
+        { "item": "Zucchini", "quantity": "8 medium, spiralized" },
+        { "item": "Basil", "quantity": "3 cups, packed" },
+        { "item": "Garlic", "quantity": "2 cloves" },
+        { "item": "Pine nuts or walnuts", "quantity": "1/2 cup" },
+        { "item": "Parmesan", "quantity": "1/2 cup, grated" },
+        { "item": "Olive oil", "quantity": "1/3 cup" },
+        { "item": "Lemon juice", "quantity": "1 tbsp" },
+        { "item": "Cherry tomatoes", "quantity": "3 cups, halved" },
+        { "item": "Salt & pepper", "quantity": "To taste" }
+      ],
+      "steps": [
+        "Blend basil, garlic, nuts, Parmesan, oil, lemon, pinch salt into pesto.",
+        "Sauté zucchini noodles in batches with a little oil, 2–3 minutes to soften.",
+        "Toss warm zoodles with pesto.",
+        "Fold in tomatoes.",
+        "Season to taste.",
+        "Portion into containers."
+      ],
+      "chickenPair": "Top with sliced baked chicken for added protein.",
+      "notes": "Eat within 3 days for best texture.",
+      "theme": "forest"
+    },
+    {
+      "id": "fajita-veggies-pinto-corn-bowls",
+      "title": "Fajita Veggies with Pinto Beans & Corn",
+      "time": "25–30 min",
+      "servings": "Serves 6",
+      "badges": ["Vegetarian", "Gluten-Free", "Meal Prep", "30 Minutes"],
+      "ingredients": [
+        { "item": "Bell peppers (mixed colors)", "quantity": "5, sliced" },
+        { "item": "Yellow onion", "quantity": "2 large, sliced" },
+        { "item": "Canned pinto beans", "quantity": "3 cans (15 oz), rinsed" },
+        { "item": "Corn kernels", "quantity": "3 cups" },
+        { "item": "Chili powder", "quantity": "2 tsp" },
+        { "item": "Cumin", "quantity": "2 tsp" },
+        { "item": "Garlic powder", "quantity": "1 tsp" },
+        { "item": "Olive oil", "quantity": "3 tbsp" },
+        { "item": "Salt & pepper", "quantity": "To taste" },
+        { "item": "Cooked rice or quinoa", "quantity": "6 cups, for serving" }
+      ],
+      "steps": [
+        "Sauté peppers and onions in oil over high heat with chili powder, cumin, salt, 7–9 minutes.",
+        "Warm beans and corn with a splash of water and garlic powder; season.",
+        "Portion grains into containers.",
+        "Top with fajita veg and bean-corn mix.",
+        "Add lime wedges if desired.",
+        "Seal and chill."
+      ],
+      "chickenPair": "Add slices of salt-and-pepper baked chicken.",
+      "notes": "Pack with salsa or avocado to add day-of.",
+      "theme": "sunset"
+    },
+    {
+      "id": "tuscan-kale-white-bean-polenta-bowls",
+      "title": "Tuscan Kale & White Bean Polenta Bowls",
+      "time": "25–30 min",
+      "servings": "Serves 6",
+      "badges": ["Vegetarian", "Gluten-Free", "Meal Prep", "30 Minutes"],
+      "ingredients": [
+        { "item": "Cornmeal (polenta)", "quantity": "2 cups" },
+        { "item": "Vegetable broth or water", "quantity": "8 cups" },
+        { "item": "Olive oil", "quantity": "3 tbsp" },
+        { "item": "Garlic", "quantity": "3 cloves, sliced" },
+        { "item": "Lacinato kale", "quantity": "2 bunches, chopped" },
+        { "item": "Canned cannellini beans", "quantity": "3 cans (15 oz), rinsed" },
+        { "item": "Crushed red pepper", "quantity": "1/2 tsp (optional)" },
+        { "item": "Parmesan", "quantity": "1/2 cup, grated" },
+        { "item": "Salt & pepper", "quantity": "To taste" }
+      ],
+      "steps": [
+        "Bring broth to a boil; whisk in cornmeal; simmer, stirring, 10–12 minutes until creamy; season and stir in Parmesan.",
+        "Sauté garlic in oil; add kale, splash water; wilt 3–4 minutes.",
+        "Stir in beans; warm through; season with salt, pepper, chili flakes.",
+        "Portion polenta into containers.",
+        "Top with kale and beans.",
+        "Cool before sealing."
+      ],
+      "chickenPair": "Serve with sliced salt-and-pepper baked chicken.",
+      "notes": "Reheat with a splash of water to loosen polenta.",
+      "theme": "ocean"
+    },
+    {
+      "id": "mushroom-spinach-rice-pilaf",
+      "title": "Mushroom & Spinach Rice Pilaf",
+      "time": "25–28 min",
+      "servings": "Serves 6",
+      "badges": ["Vegetarian", "Gluten-Free", "Meal Prep", "30 Minutes"],
+      "ingredients": [
+        { "item": "Long-grain rice", "quantity": "2 1/2 cups" },
+        { "item": "Mushrooms", "quantity": "24 oz, sliced" },
+        { "item": "Onion", "quantity": "1 large, diced" },
+        { "item": "Garlic", "quantity": "3 cloves, minced" },
+        { "item": "Butter or olive oil", "quantity": "3 tbsp" },
+        { "item": "Vegetable broth", "quantity": "5 cups" },
+        { "item": "Baby spinach", "quantity": "5 cups" },
+        { "item": "Parsley", "quantity": "1/2 cup, chopped" },
+        { "item": "Salt & pepper", "quantity": "To taste" }
+      ],
+      "steps": [
+        "Sauté mushrooms and onion in butter/oil until browned, 6–8 minutes; add garlic 30 seconds.",
+        "Add rice; toast 1 minute.",
+        "Pour in broth, pinch salt; simmer covered 12–15 minutes until tender.",
+        "Fold in spinach and parsley to wilt.",
+        "Season to taste.",
+        "Portion into containers."
+      ],
+      "chickenPair": "Top with sliced baked chicken.",
+      "notes": "Great with a squeeze of lemon.",
+      "theme": "forest"
+    },
+    {
+      "id": "broccoli-cheddar-egg-muffins-potatoes",
+      "title": "Broccoli-Cheddar Egg Muffins & Herbed Potatoes",
+      "time": "30 min",
+      "servings": "Serves 6 (12 muffins + sides)",
+      "badges": ["Vegetarian", "Gluten-Free", "Meal Prep", "30 Minutes"],
+      "ingredients": [
+        { "item": "Eggs", "quantity": "12 large" },
+        { "item": "Broccoli florets", "quantity": "4 cups, chopped" },
+        { "item": "Cheddar cheese", "quantity": "1 1/2 cups, shredded" },
+        { "item": "Milk", "quantity": "1/2 cup" },
+        { "item": "Salt & pepper", "quantity": "To taste" },
+        { "item": "Yukon gold potatoes", "quantity": "2 lb, 1/2-inch cubes" },
+        { "item": "Olive oil", "quantity": "3 tbsp" },
+        { "item": "Dried herbs (thyme/oregano)", "quantity": "1 tsp" }
+      ],
+      "steps": [
+        "Heat oven to 425°F (220°C).",
+        "Toss potatoes with 2 tbsp oil, herbs, salt; roast on a sheet 20–25 minutes.",
+        "Steam or microwave broccoli 2 minutes until crisp-tender.",
+        "Whisk eggs, milk, salt, pepper; fold in broccoli and cheddar; fill greased muffin tin.",
+        "Bake muffins at 375°F (190°C) for 14–16 minutes until set.",
+        "Portion potatoes and muffins into containers."
+      ],
+      "chickenPair": "Serve potatoes with sliced salt-and-pepper baked chicken if desired.",
+      "notes": "Breakfast or lunch; muffins keep 4 days refrigerated.",
+      "theme": "sunset"
+    },
+    {
+      "id": "harissa-roasted-veg-millet-bowls",
+      "title": "Harissa-Roasted Veg & Millet Bowls",
+      "time": "30 min",
+      "servings": "Serves 6",
+      "badges": ["Vegetarian", "Gluten-Free", "Meal Prep", "30 Minutes"],
+      "ingredients": [
+        { "item": "Millet", "quantity": "2 cups dry, rinsed" },
+        { "item": "Carrots", "quantity": "5 medium, sliced" },
+        { "item": "Zucchini", "quantity": "4 medium, sliced" },
+        { "item": "Red onion", "quantity": "1 large, wedges" },
+        { "item": "Olive oil", "quantity": "4 tbsp" },
+        { "item": "Mild harissa paste or powder", "quantity": "2 tbsp" },
+        { "item": "Lemon", "quantity": "1, cut in wedges" },
+        { "item": "Salt & pepper", "quantity": "To taste" },
+        { "item": "Plain yogurt", "quantity": "1 cup (optional for serving)" }
+      ],
+      "steps": [
+        "Cook millet in 4 cups salted water, 18–20 minutes; fluff.",
+        "Heat oven to 450°F (230°C).",
+        "Toss carrots, zucchini, onion with oil, harissa, salt; roast 18–20 minutes.",
+        "Portion millet and veg.",
+        "Add lemon wedge and yogurt if using.",
+        "Seal and chill."
+      ],
+      "chickenPair": "Add baked chicken slices on top.",
+      "notes": "Adjust harissa to heat preference.",
+      "theme": "ocean"
+    },
+    {
+      "id": "ginger-garlic-fried-rice-cashews",
+      "title": "Ginger-Garlic Veg Fried Rice with Cashews",
+      "time": "25–28 min",
+      "servings": "Serves 6",
+      "badges": ["Vegetarian", "Gluten-Free", "Meal Prep", "30 Minutes"],
+      "ingredients": [
+        { "item": "Cooked cooled rice", "quantity": "8 cups (from ~2 1/2 cups dry)" },
+        { "item": "Eggs", "quantity": "4, beaten (omit for vegan)" },
+        { "item": "Carrots", "quantity": "3, diced" },
+        { "item": "Peas", "quantity": "2 cups" },
+        { "item": "Green onions", "quantity": "1 bunch, sliced" },
+        { "item": "Garlic", "quantity": "3 cloves, minced" },
+        { "item": "Fresh ginger", "quantity": "1 tbsp, minced" },
+        { "item": "Tamari (GF)", "quantity": "3 tbsp" },
+        { "item": "Sesame oil", "quantity": "1 tbsp" },
+        { "item": "Roasted cashews", "quantity": "1 cup, chopped" }
+      ],
+      "steps": [
+        "Scramble eggs in a large skillet with a little oil; set aside.",
+        "Stir-fry carrots in 1 tbsp oil 2 minutes; add peas, garlic, ginger 1 minute.",
+        "Add rice; cook, stirring, 3–4 minutes.",
+        "Stir in tamari and sesame oil; fold in eggs and green onions.",
+        "Top with cashews.",
+        "Portion into containers."
+      ],
+      "chickenPair": "Serve with sliced baked chicken for extra protein.",
+      "notes": "Use day-old rice for best texture.",
+      "theme": "forest"
+    },
+    {
+      "id": "tomato-basil-white-bean-gf-pasta",
+      "title": "Tomato-Basil White Bean Gluten-Free Pasta",
+      "time": "20–25 min",
+      "servings": "Serves 6–8",
+      "badges": ["Vegetarian", "Gluten-Free", "Meal Prep", "30 Minutes"],
+      "ingredients": [
+        { "item": "GF pasta (penne or fusilli)", "quantity": "24 oz" },
+        { "item": "Olive oil", "quantity": "3 tbsp" },
+        { "item": "Garlic", "quantity": "3 cloves, sliced" },
+        { "item": "Cherry tomatoes", "quantity": "5 cups, halved" },
+        { "item": "Canned cannellini beans", "quantity": "2 cans (15 oz), rinsed" },
+        { "item": "Fresh basil", "quantity": "2 cups, torn" },
+        { "item": "Parmesan", "quantity": "1/2 cup, grated" },
+        { "item": "Salt & pepper", "quantity": "To taste" },
+        { "item": "Crushed red pepper", "quantity": "1/2 tsp (optional)" }
+      ],
+      "steps": [
+        "Boil pasta in salted water until al dente; reserve 1/2 cup pasta water; drain.",
+        "Sauté garlic in oil 30 seconds; add tomatoes; cook 3–4 minutes until juicy.",
+        "Stir in beans and pasta; splash pasta water to loosen.",
+        "Fold in basil; season with salt, pepper, chili flakes.",
+        "Top with Parmesan.",
+        "Pack into containers."
+      ],
+      "chickenPair": "Add sliced baked chicken to each portion if desired.",
+      "notes": "Toss with a drizzle of olive oil after reheating.",
+      "theme": "sunset"
+    },
+    {
+      "id": "red-lentil-dal-cucumber-raita",
+      "title": "Red Lentil Dal with Quick Cucumber Raita",
+      "time": "25–30 min",
+      "servings": "Serves 6–7",
+      "badges": ["Vegetarian", "Gluten-Free", "Meal Prep", "30 Minutes"],
+      "ingredients": [
+        { "item": "Red lentils (masoor dal)", "quantity": "2 cups, rinsed" },
+        { "item": "Onion", "quantity": "1 large, diced" },
+        { "item": "Garlic", "quantity": "4 cloves, minced" },
+        { "item": "Fresh ginger", "quantity": "1 tbsp, grated" },
+        { "item": "Turmeric", "quantity": "1 tsp" },
+        { "item": "Cumin seeds or ground", "quantity": "1 tsp" },
+        { "item": "Crushed tomatoes", "quantity": "1 cup" },
+        { "item": "Coconut milk or water", "quantity": "2 cups" },
+        { "item": "Plain yogurt", "quantity": "1 cup" },
+        { "item": "Cucumber", "quantity": "1, grated" },
+        { "item": "Cilantro", "quantity": "1/2 cup, chopped" },
+        { "item": "Cooked rice", "quantity": "6 cups, for serving" },
+        { "item": "Salt", "quantity": "To taste" }
+      ],
+      "steps": [
+        "Sauté onion in 1 tbsp oil until soft; add garlic, ginger, spices 30 seconds.",
+        "Add lentils, tomatoes, 4 cups water; simmer 12–15 minutes until soft.",
+        "Stir in coconut milk (or more water) and salt.",
+        "Mix yogurt with grated cucumber and pinch salt for raita.",
+        "Portion rice and dal into containers.",
+        "Top with cilantro; pack raita separately."
+      ],
+      "chickenPair": "Serve with sliced salt-and-pepper baked chicken on the side.",
+      "notes": "Dal thickens as it cools; thin with water when reheating.",
+      "theme": "ocean"
+    },
+    {
+      "id": "sweet-corn-zucchini-fritters-salad",
+      "title": "Sweet Corn & Zucchini Fritters with Avocado Salad",
+      "time": "25–30 min",
+      "servings": "Serves 6 (12 fritters)",
+      "badges": ["Vegetarian", "Gluten-Free", "Meal Prep", "30 Minutes"],
+      "ingredients": [
+        { "item": "Zucchini", "quantity": "4 medium, grated and squeezed dry" },
+        { "item": "Corn kernels", "quantity": "3 cups" },
+        { "item": "GF oat flour", "quantity": "1 1/4 cups" },
+        { "item": "Eggs", "quantity": "3 large" },
+        { "item": "Green onions", "quantity": "1 bunch, sliced" },
+        { "item": "Salt & pepper", "quantity": "To taste" },
+        { "item": "Olive oil", "quantity": "3 tbsp (for frying)" },
+        { "item": "Avocado", "quantity": "2, diced" },
+        { "item": "Lime juice", "quantity": "2 tbsp" },
+        { "item": "Cilantro", "quantity": "1/3 cup, chopped" }
+      ],
+      "steps": [
+        "Mix zucchini, corn, oat flour, eggs, green onions, salt, pepper into a thick batter.",
+        "Heat film of oil in skillet; cook 1/4-cup scoops 2–3 minutes per side until golden; repeat.",
+        "Toss avocado with lime and cilantro; season.",
+        "Cool fritters on rack.",
+        "Portion fritters and salad into containers.",
+        "Reheat fritters in a dry pan or oven."
+      ],
+      "chickenPair": "Add sliced baked chicken alongside.",
+      "notes": "Keep avocado salad separate until serving if packing for 3+ days.",
+      "theme": "forest"
+    },
+    {
+      "id": "roasted-carrot-beet-quinoa-tahini",
+      "title": "Roasted Carrot & Beet Quinoa with Lemon-Tahini",
+      "time": "30 min",
+      "servings": "Serves 6",
+      "badges": ["Vegetarian", "Gluten-Free", "Meal Prep", "30 Minutes"],
+      "ingredients": [
+        { "item": "Quinoa", "quantity": "2 cups dry, rinsed" },
+        { "item": "Carrots", "quantity": "6 medium, sliced" },
+        { "item": "Beets", "quantity": "4 medium, 1/2-inch cubes" },
+        { "item": "Red onion", "quantity": "1 large, wedges" },
+        { "item": "Olive oil", "quantity": "4 tbsp" },
+        { "item": "Tahini", "quantity": "1/3 cup" },
+        { "item": "Lemon juice", "quantity": "1/4 cup" },
+        { "item": "Garlic", "quantity": "1 clove, minced" },
+        { "item": "Water", "quantity": "2–4 tbsp to thin" },
+        { "item": "Salt & pepper", "quantity": "To taste" }
+      ],
+      "steps": [
+        "Heat oven to 450°F (230°C).",
+        "Toss carrots, beets, onion with 3 tbsp oil, salt, pepper; roast 20–22 minutes.",
+        "Cook quinoa in 4 cups salted water, 15 minutes; fluff.",
+        "Whisk tahini, lemon, garlic, water, pinch salt until pourable.",
+        "Portion quinoa and roasted veg; drizzle dressing.",
+        "Cool, then seal."
+      ],
+      "chickenPair": "Serve with sliced salt-and-pepper baked chicken.",
+      "notes": "Add chopped parsley for freshness.",
+      "theme": "sunset"
+    },
+    {
+      "id": "thai-basil-veggie-stir-fry-rice",
+      "title": "Thai Basil Veggie Stir-Fry with Jasmine Rice",
+      "time": "25 min",
+      "servings": "Serves 6",
+      "badges": ["Vegetarian", "Gluten-Free", "Meal Prep", "30 Minutes"],
+      "ingredients": [
+        { "item": "Jasmine rice", "quantity": "2 1/2 cups dry" },
+        { "item": "Bell peppers", "quantity": "3, sliced" },
+        { "item": "Green beans", "quantity": "1 lb, trimmed" },
+        { "item": "Carrots", "quantity": "2, matchsticks" },
+        { "item": "Garlic", "quantity": "3 cloves, minced" },
+        { "item": "Fresh basil", "quantity": "2 cups, torn" },
+        { "item": "Tamari (GF)", "quantity": "3 tbsp" },
+        { "item": "Lime juice", "quantity": "2 tbsp" },
+        { "item": "Honey or maple", "quantity": "1 tbsp" },
+        { "item": "Neutral oil", "quantity": "2 tbsp" }
+      ],
+      "steps": [
+        "Cook rice in 5 cups water; rest covered.",
+        "Whisk tamari, lime, honey.",
+        "Stir-fry green beans and carrots in hot oil 3 minutes; add peppers 2 minutes.",
+        "Add garlic 30 seconds; pour sauce; toss.",
+        "Fold in basil off heat.",
+        "Portion over rice."
+      ],
+      "chickenPair": "Top with sliced baked chicken if desired.",
+      "notes": "Add chili flakes for heat.",
+      "theme": "ocean"
+    },
+    {
+      "id": "moroccan-chickpea-millet-raisins",
+      "title": "Moroccan-Spiced Chickpea & Millet with Raisins",
+      "time": "25–30 min",
+      "servings": "Serves 6–7",
+      "badges": ["Vegetarian", "Gluten-Free", "Meal Prep", "30 Minutes"],
+      "ingredients": [
+        { "item": "Millet", "quantity": "2 cups dry" },
+        { "item": "Canned chickpeas", "quantity": "3 cans (15 oz), rinsed" },
+        { "item": "Raisins", "quantity": "3/4 cup" },
+        { "item": "Carrots", "quantity": "4, diced" },
+        { "item": "Onion", "quantity": "1 large, diced" },
+        { "item": "Ground cumin", "quantity": "2 tsp" },
+        { "item": "Ground coriander", "quantity": "1 1/2 tsp" },
+        { "item": "Cinnamon", "quantity": "1/2 tsp" },
+        { "item": "Olive oil", "quantity": "3 tbsp" },
+        { "item": "Parsley", "quantity": "1/2 cup, chopped" },
+        { "item": "Salt & pepper", "quantity": "To taste" }
+      ],
+      "steps": [
+        "Cook millet in 4 cups salted water, 18–20 minutes; fluff.",
+        "Sauté onion and carrots in oil 5 minutes.",
+        "Add spices; cook 30 seconds.",
+        "Stir in chickpeas and raisins; warm through; season.",
+        "Fold into millet with parsley.",
+        "Portion and cool."
+      ],
+      "chickenPair": "Add sliced salt-and-pepper baked chicken when serving.",
+      "notes": "Finish with lemon for brightness.",
+      "theme": "forest"
+    },
+    {
+      "id": "hearty-potato-leek-cannellini-skillet",
+      "title": "Hearty Potato, Leek & Cannellini Skillet",
+      "time": "25–30 min",
+      "servings": "Serves 6",
+      "badges": ["Vegetarian", "Gluten-Free", "Meal Prep", "30 Minutes"],
+      "ingredients": [
+        { "item": "Baby potatoes", "quantity": "2 lb, quartered" },
+        { "item": "Leeks", "quantity": "2 large, sliced and rinsed" },
+        { "item": "Canned cannellini beans", "quantity": "3 cans (15 oz), rinsed" },
+        { "item": "Garlic", "quantity": "3 cloves, minced" },
+        { "item": "Olive oil", "quantity": "3 tbsp" },
+        { "item": "Thyme", "quantity": "1 tsp dried or 1 tbsp fresh" },
+        { "item": "Vegetable broth", "quantity": "1 cup" },
+        { "item": "Lemon", "quantity": "1, juiced" },
+        { "item": "Salt & pepper", "quantity": "To taste" }
+      ],
+      "steps": [
+        "Pan-fry potatoes in 2 tbsp oil with pinch salt until golden, 10–12 minutes; push to sides.",
+        "Sauté leeks in 1 tbsp oil 3 minutes; add garlic 30 seconds.",
+        "Stir in beans, thyme, broth; simmer 3–4 minutes.",
+        "Add lemon juice; season.",
+        "Toss to combine.",
+        "Portion into containers."
+      ],
+      "chickenPair": "Serve with sliced baked chicken on the side.",
+      "notes": "Great with chopped parsley.",
+      "theme": "sunset"
+    },
+    {
+      "id": "mediterranean-bulgur-free-buckwheat-bowls",
+      "title": "Mediterranean Buckwheat (Kasha) Veg Bowls",
+      "time": "20–25 min",
+      "servings": "Serves 6",
+      "badges": ["Vegetarian", "Gluten-Free", "Meal Prep", "30 Minutes"],
+      "ingredients": [
+        { "item": "Buckwheat groats (kasha)", "quantity": "2 cups dry" },
+        { "item": "Cherry tomatoes", "quantity": "3 cups, halved" },
+        { "item": "Cucumber", "quantity": "2 large, diced" },
+        { "item": "Red onion", "quantity": "1/2 large, minced" },
+        { "item": "Parsley", "quantity": "1 cup, chopped" },
+        { "item": "Olive oil", "quantity": "1/4 cup" },
+        { "item": "Lemon juice", "quantity": "1/4 cup" },
+        { "item": "Feta", "quantity": "4 oz, crumbled (optional)" },
+        { "item": "Salt & pepper", "quantity": "To taste" }
+      ],
+      "steps": [
+        "Toast buckwheat in a dry pot 1 minute; add 4 cups salted water; simmer 12–14 minutes; drain if needed; cool 5 minutes.",
+        "Whisk oil, lemon, salt, pepper.",
+        "Combine buckwheat, tomatoes, cucumber, onion, parsley; toss with dressing.",
+        "Fold in feta if using.",
+        "Portion into containers.",
+        "Chill."
+      ],
+      "chickenPair": "Top with sliced salt-and-pepper baked chicken if desired.",
+      "notes": "Naturally gluten-free despite the name.",
+      "theme": "ocean"
+    },
+    {
+      "id": "mediterranean-buddha-bowl-tahini-lemon",
+      "title": "Mediterranean Buddha Bowls with Tahini-Lemon",
+      "time": "25–30 min",
+      "servings": "Serves 6–7",
+      "badges": ["Vegetarian", "Gluten-Free", "Meal Prep", "30 Minutes"],
+      "ingredients": [
+        { "item": "Brown rice or quinoa", "quantity": "2 1/2 cups dry" },
+        { "item": "Canned chickpeas", "quantity": "3 cans (15 oz), rinsed" },
+        { "item": "Cucumber", "quantity": "2, diced" },
+        { "item": "Cherry tomatoes", "quantity": "3 cups, halved" },
+        { "item": "Kale", "quantity": "1 large bunch, chopped" },
+        { "item": "Olive oil", "quantity": "3 tbsp" },
+        { "item": "Tahini", "quantity": "1/3 cup" },
+        { "item": "Lemon juice", "quantity": "1/4 cup" },
+        { "item": "Garlic", "quantity": "1 clove, minced" },
+        { "item": "Water", "quantity": "2–4 tbsp to thin" },
+        { "item": "Salt & pepper", "quantity": "To taste" }
+      ],
+      "steps": [
+        "Cook grains in salted water per package (about 15 minutes for quinoa or 25 for quick brown); cool slightly.",
+        "Massage kale with 1 tbsp oil and pinch salt to soften.",
+        "Whisk tahini, lemon, garlic, water, salt.",
+        "Portion grains, kale, chickpeas, cucumber, tomatoes.",
+        "Drizzle dressing over each.",
+        "Seal and chill."
+      ],
+      "chickenPair": "Serve with sliced baked chicken on top.",
+      "notes": "Add olives or feta if desired.",
+      "theme": "forest"
+    },
+    {
+      "id": "mediterranean-stuffed-pepper-deconstructed",
+      "title": "Deconstructed Quinoa Stuffed Peppers",
+      "time": "25–30 min",
+      "servings": "Serves 6",
+      "badges": ["Vegetarian", "Gluten-Free", "Meal Prep", "30 Minutes"],
+      "ingredients": [
+        { "item": "Quinoa", "quantity": "2 cups dry, rinsed" },
+        { "item": "Bell peppers", "quantity": "5, diced" },
+        { "item": "Onion", "quantity": "1 large, diced" },
+        { "item": "Garlic", "quantity": "3 cloves, minced" },
+        { "item": "Diced tomatoes", "quantity": "1 can (28 oz)" },
+        { "item": "Cumin", "quantity": "1 1/2 tsp" },
+        { "item": "Smoked paprika", "quantity": "1 tsp" },
+        { "item": "Olive oil", "quantity": "2 tbsp" },
+        { "item": "Salt & pepper", "quantity": "To taste" },
+        { "item": "Shredded cheese", "quantity": "1 cup (optional)" }
+      ],
+      "steps": [
+        "Cook quinoa in 4 cups salted water, 15 minutes; fluff.",
+        "Sauté onion and peppers in oil 5 minutes; add garlic 30 seconds.",
+        "Stir in tomatoes, cumin, paprika; simmer 3 minutes; season.",
+        "Fold in quinoa.",
+        "Top with cheese if using to melt briefly.",
+        "Portion into containers."
+      ],
+      "chickenPair": "Add sliced salt-and-pepper baked chicken when serving.",
+      "notes": "Finish with chopped cilantro.",
+      "theme": "sunset"
+    },
+    {
+      "id": "savory-oatmeal-miso-mushroom-spinach",
+      "title": "Savory Oats with Mushrooms, Spinach & Egg",
+      "time": "20–25 min",
+      "servings": "Serves 6",
+      "badges": ["Vegetarian", "Gluten-Free", "Meal Prep", "30 Minutes"],
+      "ingredients": [
+        { "item": "Gluten-free rolled oats", "quantity": "3 cups" },
+        { "item": "Vegetable broth or water", "quantity": "6 cups" },
+        { "item": "Mushrooms", "quantity": "16 oz, sliced" },
+        { "item": "Spinach", "quantity": "5 cups" },
+        { "item": "Eggs", "quantity": "6, soft-boiled or jammy" },
+        { "item": "Green onions", "quantity": "1 bunch, sliced" },
+        { "item": "Tamari (GF)", "quantity": "2 tbsp" },
+        { "item": "Sesame oil", "quantity": "1 tsp" },
+        { "item": "Olive oil", "quantity": "1 tbsp" },
+        { "item": "Salt & pepper", "quantity": "To taste" }
+      ],
+      "steps": [
+        "Simmer oats in broth 8–10 minutes, stirring; season with tamari and sesame oil.",
+        "Sauté mushrooms in olive oil until browned; season.",
+        "Stir spinach into hot oats to wilt.",
+        "Portion oats; top with mushrooms.",
+        "Add peeled jammy egg to each container.",
+        "Garnish with green onions."
+      ],
+      "chickenPair": "Replace egg with sliced baked chicken if desired.",
+      "notes": "Keep eggs separate if storing 4–5 days.",
+      "theme": "ocean"
+    },
+    {
+      "id": "sesame-crunch-cabbage-noodle-bowls",
+      "title": "Sesame Crunch Cabbage & Rice Noodle Bowls",
+      "time": "20–25 min",
+      "servings": "Serves 6",
+      "badges": ["Vegetarian", "Gluten-Free", "Meal Prep", "30 Minutes"],
+      "ingredients": [
+        { "item": "Brown rice noodles (GF)", "quantity": "18 oz" },
+        { "item": "Green cabbage", "quantity": "1 small head, shredded" },
+        { "item": "Carrots", "quantity": "3, grated" },
+        { "item": "Cilantro", "quantity": "1 cup, chopped" },
+        { "item": "Toasted sesame seeds", "quantity": "3 tbsp" },
+        { "item": "Lime juice", "quantity": "1/4 cup" },
+        { "item": "Tamari (GF)", "quantity": "3 tbsp" },
+        { "item": "Honey or maple", "quantity": "1 tbsp" },
+        { "item": "Sesame oil", "quantity": "1 tbsp" },
+        { "item": "Neutral oil", "quantity": "2 tbsp" }
+      ],
+      "steps": [
+        "Cook noodles per package; rinse cold and drain well.",
+        "Whisk lime juice, tamari, honey, oils.",
+        "Toss noodles with cabbage, carrots, cilantro, dressing.",
+        "Sprinkle sesame seeds.",
+        "Portion into containers.",
+        "Chill; add extra lime when serving."
+      ],
+      "chickenPair": "Add sliced baked chicken to each bowl for protein.",
+      "notes": "Rinse noodles to keep from sticking.",
+      "theme": "forest"
+    },
+    {
+      "id": "sheet-pan-gnocchi-free-alt-potato-veg",
+      "title": "Crispy Potatoes & Veg with Herbed Yogurt",
+      "time": "30 min",
+      "servings": "Serves 6",
+      "badges": ["Vegetarian", "Gluten-Free", "Meal Prep", "30 Minutes"],
+      "ingredients": [
+        { "item": "Baby potatoes", "quantity": "2 lb, halved" },
+        { "item": "Broccoli florets", "quantity": "5 cups" },
+        { "item": "Red bell peppers", "quantity": "2, sliced" },
+        { "item": "Olive oil", "quantity": "4 tbsp" },
+        { "item": "Paprika", "quantity": "1 tsp" },
+        { "item": "Garlic powder", "quantity": "1 tsp" },
+        { "item": "Salt & pepper", "quantity": "To taste" },
+        { "item": "Plain Greek yogurt", "quantity": "1 cup" },
+        { "item": "Lemon juice", "quantity": "1 tbsp" },
+        { "item": "Dill or parsley", "quantity": "2 tbsp, chopped" }
+      ],
+      "steps": [
+        "Heat oven to 450°F (230°C).",
+        "Toss potatoes with 2 tbsp oil, paprika, salt; roast 10 minutes.",
+        "Add broccoli and peppers with 2 tbsp oil, garlic powder, salt, pepper; roast 12–15 minutes more.",
+        "Mix yogurt, lemon, herbs, pinch salt.",
+        "Portion veg and potatoes.",
+        "Serve with herbed yogurt dollop."
+      ],
+      "chickenPair": "Add sliced salt-and-pepper baked chicken to each container.",
+      "notes": "Crisp again in a hot oven for 5 minutes.",
+      "theme": "sunset"
+    }
+  ]
+}
