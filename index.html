@@ -17,12 +17,24 @@
         <button id="pasteBtn">Paste JSON</button>
       </div>
       <div class="toolbar-right">
-        <button id="printBtn">Print</button>
+        <div class="menu">
+          <button id="exportBtn">Export ▾</button>
+          <ul id="exportMenu" class="menu-list hidden">
+            <li><button id="exportPrint">Print…</button></li>
+            <li><button id="exportCopyMd">Copy as Markdown</button></li>
+          </ul>
+        </div>
       </div>
     </header>
 
     <main>
+      <nav class="tabs no-print">
+        <button id="tabRecipes" class="tab active">Recipes</button>
+        <button id="tabIngredients" class="tab">Ingredients</button>
+      </nav>
+
       <div id="cards" class="cards"></div>
+      <section id="ingredientsView" class="ingredients-view hidden"></section>
 
       <template id="cardTemplate">
         <section class="card">
@@ -75,6 +87,7 @@
       </form>
     </dialog>
 
+    <div id="toast" class="toast" aria-live="polite" aria-atomic="true"></div>
     <script src="script.js"></script>
   </body>
   </html>

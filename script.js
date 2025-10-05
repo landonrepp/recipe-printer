@@ -3,15 +3,23 @@
 const els = {
   fileInput: document.getElementById('fileInput'),
   loadSample: document.getElementById('loadSample'),
-  printBtn: document.getElementById('printBtn'),
+  exportBtn: document.getElementById('exportBtn'),
+  exportMenu: document.getElementById('exportMenu'),
+  exportPrint: document.getElementById('exportPrint'),
+  exportCopyMd: document.getElementById('exportCopyMd'),
   cards: document.getElementById('cards'),
   tpl: document.getElementById('cardTemplate'),
   pasteBtn: document.getElementById('pasteBtn'),
   pasteDialog: document.getElementById('pasteDialog'),
   pasteText: document.getElementById('pasteText'),
   pasteLoad: document.getElementById('pasteLoad'),
-  pasteCancel: document.getElementById('pasteCancel')
+  pasteCancel: document.getElementById('pasteCancel'),
+  tabRecipes: document.getElementById('tabRecipes'),
+  tabIngredients: document.getElementById('tabIngredients'),
+  ingredientsView: document.getElementById('ingredientsView')
 };
+
+let currentRecipes = [];
 
 const sample = {
   id: "buddha-bowls",
@@ -78,8 +86,17 @@ function validateRecipe(recipe){
   return errors;
 }
 
-function buildCard(recipe){
+function slugifyTitle(title, i){
+  const base = (title || '').toString().toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/(^-|-$)/g,'');
+  const suffix = `-${i+1}`;
+  return base ? `${base}${suffix}` : `recipe-${i+1}`;
+}
+
+function buildCard(recipe, i){
   const node = els.tpl.content.firstElementChild.cloneNode(true);
+  // anchor id for linking from ingredients view
+  const id = `recipe-${slugifyTitle(recipe.title, i)}`;
+  node.id = id;
 
   // theme (apply per-card so multiple cards can have different themes)
   const heroEl = node.querySelector('.hero');
@@ -172,10 +189,17 @@ function render(data){
   });
   if (errs.length) { alert(errs.join('\n\n')); return; }
 
-  list.forEach(r => {
-    const card = buildCard(r);
+  currentRecipes = list;
+
+  list.forEach((r, i) => {
+    const card = buildCard(r, i);
     els.cards.appendChild(card);
   });
+
+  // If ingredients tab is active, re-render it
+  if (!els.ingredientsView.classList.contains('hidden')) {
+    renderIngredientsView();
+  }
 }
 
 function readFile(file) {
@@ -212,7 +236,113 @@ async function loadSampleFromDisk() {
 }
 
 els.loadSample.addEventListener('click', () => loadSampleFromDisk());
-els.printBtn.addEventListener('click', () => window.print());
+
+// Export menu
+function toggleExportMenu(show){
+  const open = show ?? els.exportMenu.classList.contains('hidden');
+  els.exportMenu.classList.toggle('hidden', !open);
+}
+els.exportBtn?.addEventListener('click', (e) => {
+  e.preventDefault();
+  toggleExportMenu();
+});
+document.addEventListener('click', (e) => {
+  if (!els.exportMenu) return;
+  if (e.target === els.exportBtn || els.exportMenu.contains(e.target)) return;
+  els.exportMenu.classList.add('hidden');
+});
+els.exportPrint?.addEventListener('click', () => { toggleExportMenu(false); window.print(); });
+
+function str(v){ return (v ?? '').toString(); }
+
+// Toasts
+function showToast(message, type){
+  const host = document.getElementById('toast');
+  if (!host) return;
+  const node = document.createElement('div');
+  node.className = `toast-item ${type || ''}`.trim();
+  node.textContent = message;
+  host.appendChild(node);
+  // let layout apply, then animate
+  requestAnimationFrame(() => node.classList.add('show'));
+  const ttl = 2500;
+  setTimeout(() => {
+    node.classList.remove('show');
+    setTimeout(() => node.remove(), 200);
+  }, ttl);
+}
+
+function recipeToMarkdown(r){
+  const lines = [];
+  lines.push(`# ${str(r.title).trim()}`);
+  const meta = [];
+  if (r.time) meta.push(`Time: ${str(r.time)}`);
+  if (r.servings) meta.push(`Servings: ${str(r.servings)}`);
+  if (meta.length) lines.push(meta.join(' • '));
+  if (Array.isArray(r.badges) && r.badges.length) lines.push(r.badges.map(b=>`_${str(b)}_`).join(' '));
+  lines.push('');
+  lines.push('## Ingredients');
+  (r.ingredients||[]).forEach(it => {
+    if (typeof it === 'string') lines.push(`- ${it}`);
+    else if (it && typeof it === 'object') {
+      const qty = str(it.quantity || it.qty || '').trim();
+      const name = str(it.item || it.name || '').trim();
+      lines.push(`- ${qty && name ? `${qty} — ${name}` : (name || qty)}`);
+    } else {
+      lines.push(`- ${String(it)}`);
+    }
+  });
+  lines.push('');
+  lines.push('## Steps');
+  (r.steps||[]).forEach((s,i)=> lines.push(`${i+1}. ${str(s).trim()}`));
+  if (r.notes) { lines.push(''); lines.push('> ' + str(r.notes).trim()); }
+  if (r.nutrition && typeof r.nutrition === 'object'){
+    lines.push('');
+    lines.push('## Nutrition (per serving)');
+    Object.entries(r.nutrition).forEach(([k,v])=> lines.push(`- ${k[0].toUpperCase()+k.slice(1)}: ${str(v).trim()}`));
+  }
+  lines.push('');
+  return lines.join('\n');
+}
+
+function activeViewIsIngredients(){
+  return !els.ingredientsView.classList.contains('hidden');
+}
+
+function ingredientsIndexToMarkdown(){
+  const groups = computeIngredientGroups(currentRecipes);
+  const keys = Array.from(groups.keys()).sort((a,b)=> a.localeCompare(b));
+  const lines = ['# Ingredients Index',''];
+  keys.forEach(k => {
+    const g = groups.get(k);
+    lines.push(`## ${g.name}`);
+    g.entries.forEach(en => {
+      const qty = en.qty ? `${en.qty} — ` : '';
+      lines.push(`- ${qty}${en.recipeTitle}`);
+    });
+    lines.push('');
+  });
+  return lines.join('\n');
+}
+
+async function copyMarkdown(){
+  const md = activeViewIsIngredients()
+    ? ingredientsIndexToMarkdown()
+    : (currentRecipes || []).map(recipeToMarkdown).join('\n\n---\n\n');
+  try {
+    await navigator.clipboard.writeText(md);
+    showToast('Markdown copied to clipboard.', 'success');
+  } catch (err) {
+    // fallback
+    const ta = document.createElement('textarea');
+    ta.value = md; document.body.appendChild(ta); ta.select();
+    try { document.execCommand('copy'); showToast('Markdown copied to clipboard.', 'success'); }
+    catch(e){ showToast('Could not copy markdown.', 'error'); }
+    finally { document.body.removeChild(ta); }
+  }
+}
+
+els.exportCopyMd?.addEventListener('click', () => { toggleExportMenu(false); copyMarkdown(); });
 
 // Paste JSON flow
 function openPasteDialog(){
@@ -250,6 +380,94 @@ els.pasteText?.addEventListener('keydown', (e) => {
   if (e.key === 'Enter' && (e.ctrlKey || e.metaKey)) {
     e.preventDefault();
     loadFromPastedText();
+  }
+});
+
+// Ingredients tab
+function computeIngredientGroups(recipes){
+  const map = new Map();
+  recipes.forEach((r, i) => {
+    const recipeId = `recipe-${slugifyTitle(r.title, i)}`;
+    const title = sanitizeText(r.title);
+    (r.ingredients || []).forEach(it => {
+      let name = '';
+      let qty = '';
+      if (typeof it === 'string') {
+        name = sanitizeText(it);
+      } else if (it && typeof it === 'object') {
+        name = sanitizeText(it.item || it.name || '');
+        qty = sanitizeText(it.quantity || it.qty || '');
+      }
+      if (!name) return;
+      const key = name.toLowerCase();
+      if (!map.has(key)) map.set(key, { name, entries: [] });
+      map.get(key).entries.push({ qty, recipeTitle: title, recipeId });
+    });
+  });
+  return map;
+}
+
+function renderIngredientsView(){
+  const root = els.ingredientsView;
+  root.innerHTML = '';
+  const groups = computeIngredientGroups(currentRecipes);
+  const keys = Array.from(groups.keys()).sort((a,b)=> a.localeCompare(b));
+  keys.forEach(k => {
+    const g = groups.get(k);
+    const wrap = document.createElement('div');
+    wrap.className = 'ingredient-group';
+    const h = document.createElement('h3');
+    h.textContent = g.name;
+    const ul = document.createElement('ul');
+    g.entries.forEach(en => {
+      const li = document.createElement('li');
+      const a = document.createElement('a');
+      a.href = `#${en.recipeId}`;
+      a.textContent = (en.qty ? `${en.qty} — ${en.recipeTitle}` : en.recipeTitle);
+      li.appendChild(a);
+      ul.appendChild(li);
+    });
+    wrap.appendChild(h);
+    wrap.appendChild(ul);
+    root.appendChild(wrap);
+  });
+}
+
+function showRecipes(){
+  els.cards.classList.remove('hidden');
+  els.ingredientsView.classList.add('hidden');
+  els.tabRecipes?.classList.add('active');
+  els.tabIngredients?.classList.remove('active');
+}
+
+function showIngredients(){
+  els.cards.classList.add('hidden');
+  els.ingredientsView.classList.remove('hidden');
+  els.tabRecipes?.classList.remove('active');
+  els.tabIngredients?.classList.add('active');
+  renderIngredientsView();
+}
+
+els.tabRecipes?.addEventListener('click', showRecipes);
+els.tabIngredients?.addEventListener('click', showIngredients);
+
+// If a link in the ingredients view is clicked, switch to Recipes and scroll to card
+els.ingredientsView?.addEventListener('click', (e) => {
+  const a = e.target.closest('a');
+  const href = a?.getAttribute('href') || '';
+  if (a && href.startsWith('#recipe-')) {
+    e.preventDefault();
+    const target = href;
+    showRecipes();
+    // Wait for layout, then scroll to the target card (works even if hash was already set)
+    requestAnimationFrame(() => {
+      const el = document.querySelector(target);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+      // Update the URL hash without triggering another scroll
+      if (location.hash !== target) history.replaceState(null, '', target);
+    });
   }
 });
 

@@ -14,10 +14,20 @@ html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family:sy
 .toolbar input[type=file]{display:none}
 .toolbar button{border:1px solid var(--border);background:#fff;border-radius:6px;padding:6px 12px;cursor:pointer}
 .toolbar button:hover{border-color:#cbd5e1}
+.menu{position:relative}
+.menu .menu-list{position:absolute;right:0;top:calc(100% + 6px);background:#fff;border:1px solid var(--border);border-radius:8px;box-shadow:0 6px 20px rgba(0,0,0,.08);padding:6px;list-style:none;margin:0;min-width:180px;z-index:10}
+.menu .menu-list li{margin:0}
+.menu .menu-list button{width:100%;text-align:left;border:none;background:transparent;padding:8px 10px;border-radius:6px}
+.menu .menu-list button:hover{background:#f3f4f6}
 
-main{display:flex;justify-content:center;padding:16px}
-.cards{display:flex;flex-direction:column;gap:16px;width:100%;max-width:1000px}
-.card{width:100%;background:var(--card);border:1px solid var(--border);border-radius:10px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.04)}
+main{display:block;padding:16px}
+.cards{display:flex;flex-direction:column;gap:16px;width:100%;max-width:1000px;margin:0 auto}
+.card{width:100%;background:var(--card);border:1px solid var(--border);border-radius:10px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.04);scroll-margin-top:80px}
+
+/* Tabs */
+.tabs{width:100%;max-width:1000px;display:flex;gap:8px;margin:0 auto 12px auto}
+.tabs .tab{border:1px solid var(--border);background:#fff;border-radius:999px;padding:6px 12px;cursor:pointer}
+.tabs .tab.active{background:#f3f4f6;border-color:#cbd5e1}
 
 .hero{display:flex;align-items:flex-end;min-height:180px;background:linear-gradient(135deg,var(--heroA),var(--heroB));padding:20px}
 .hero-info{background:rgba(255,255,255,.88);backdrop-filter:saturate(1.2) blur(2px);padding:14px 16px;border-radius:10px;border:1px solid var(--border)}
@@ -45,6 +55,22 @@ main{display:flex;justify-content:center;padding:16px}
 .notes{margin-top:14px;padding:10px;border:1px dashed var(--border);border-radius:8px;background:#fffdf5}
 .hidden{display:none}
 
+/* Toast */
+.toast{position:fixed;right:16px;bottom:16px;display:flex;flex-direction:column;gap:8px;z-index:1000;pointer-events:none}
+.toast .toast-item{pointer-events:auto;min-width:220px;max-width:420px;background:#111;color:#fff;border-radius:8px;padding:10px 12px;font-size:14px;box-shadow:0 6px 20px rgba(0,0,0,.18);opacity:0;transform:translateY(6px);transition:opacity .2s ease, transform .2s ease}
+.toast .toast-item.show{opacity:1;transform:translateY(0)}
+.toast .toast-item.success{background:#065f46}
+.toast .toast-item.error{background:#7f1d1d}
+
+/* Ingredients view */
+.ingredients-view{width:100%;max-width:1000px;display:flex;flex-direction:column;gap:12px;margin:0 auto}
+.ingredient-group{background:#fff;border:1px solid var(--border);border-radius:10px;padding:12px}
+.ingredient-group h3{margin:0 0 6px 0}
+.ingredient-group ul{margin:0;padding-left:18px}
+.ingredient-group li{margin:4px 0}
+.ingredient-group a{color:var(--accent);text-decoration:none}
+.ingredient-group a:hover{text-decoration:underline}
+
 /* Paste JSON dialog */
 dialog{border:none;border-radius:10px;padding:0;box-shadow:0 10px 30px rgba(0,0,0,.25);max-width:800px;width:min(90vw,800px)}
 dialog::backdrop{background:rgba(0,0,0,.35)}
@@ -63,6 +89,9 @@ dialog::backdrop{background:rgba(0,0,0,.35)}
   .no-print{display:none !important}
   body{background:white;font-size:11pt}
   .cards{gap:0.4in;max-width:100%}
+  .tabs{display:none}
+  /* Print whichever view is active; hidden class already suppresses the other */
+  .ingredient-group{page-break-inside:avoid}
   .card{border:1px solid #d1d5db;box-shadow:none;page-break-inside:avoid;border-radius:12px}
   .hero{min-height:auto;padding:18px}
   .hero-info{border-radius:12px}
